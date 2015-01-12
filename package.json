@@ -1,0 +1,25 @@
+{
+  "name": "WidgetCo",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrewk/js-tdd-demo"
+  },
+  "devDependencies": {
+    "eslint": "^0.10.1",
+    "eslint-plugin-no-exclusive-tests": "^0.2.0",
+    "imports-loader": "^0.6.3",
+    "jasmine": "^2.1.1",
+    "karma": "~0.12.31",
+    "karma-chrome-launcher": "~0.1.0",
+    "karma-jasmine": "~0.2.2",
+    "karma-phantomjs-launcher": "~0.1.0",
+    "karma-webpack": "~1.5.0",
+    "raw-loader": "^0.5.1",
+    "webpack": "^1.4.13",
+    "webpack-dev-server": "~1.6.5"
+  },
+  "dependencies": {
+    "event-emitter": "^0.3.1"
+  }
+}
