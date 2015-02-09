@@ -41,7 +41,7 @@ describe('Live input', function() {
       node.value = 'wut';
       node.dispatchEvent(new Event('keyup'));
       jasmine.clock().tick(201);
-      expect(input.events.emit).toHaveBeenCalled();
+      expect(input.events.emit).toHaveBeenCalledWith('data', 'wut');
     });
   });
 
@@ -51,7 +51,7 @@ describe('Live input', function() {
       node.value = 'wut';
       node.dispatchEvent(new Event('keyup'));
       jasmine.clock().tick(100);
-      expect(input.events.emit).not.toHaveBeenCalled(); 
+      expect(input.events.emit).not.toHaveBeenCalled();
     });
 
     it('does emit an event 200ms after the keypress', function() {
@@ -59,7 +59,7 @@ describe('Live input', function() {
       node.value = 'wut';
       node.dispatchEvent(new Event('keyup'));
       jasmine.clock().tick(201);
-      expect(input.events.emit).toHaveBeenCalled(); 
+      expect(input.events.emit).toHaveBeenCalled();
     });
 
     it('cancels pending event if more user input is received', function() {

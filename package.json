@@ -17,9 +17,10 @@
     "karma-webpack": "~1.5.0",
     "raw-loader": "^0.5.1",
     "webpack": "^1.4.13",
-    "webpack-dev-server": "~1.6.5"
-  },
-  "dependencies": {
+    "webpack-dev-server": "~1.6.5",
     "event-emitter": "^0.3.1"
+  },
+  "scripts": {
+    "test": "karma start --single-run"
   }
 }
